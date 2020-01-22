@@ -1,0 +1,502 @@
+@font-face {
+	font-family: iconfont;
+	src: url(iconfont.eot?t=1492570434104#iefix) format("embedded-opentype"), url(iconfont.woff?t=1492570434104) format("woff"), url(iconfont.ttf?t=1492570434104) format("truetype"), url(iconfont.svg?t=1492570434104#iconfont) format("svg");
+}
+.animated {
+	animation-duration: 1s; animation-fill-mode: both; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both;
+}
+.animated.infinite {
+	animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite;
+}
+.animated.hinge {
+	animation-duration: 2s; -webkit-animation-duration: 2s;
+}
+.bounce {
+	transform-origin: center bottom; animation-name: bounce; -webkit-animation-name: bounce; -webkit-transform-origin: center bottom;
+}
+.flash {
+	animation-name: flash; -webkit-animation-name: flash;
+}
+.pulse {
+	animation-name: pulse; -webkit-animation-name: pulse;
+}
+.rubberBand {
+	animation-name: rubberBand; -webkit-animation-name: rubberBand;
+}
+.shake {
+	animation-name: shake; -webkit-animation-name: shake;
+}
+.swing {
+	transform-origin: center top; animation-name: swing; -webkit-animation-name: swing; -webkit-transform-origin: top center;
+}
+.tada {
+	animation-name: tada; -webkit-animation-name: tada;
+}
+.wobble {
+	animation-name: wobble; -webkit-animation-name: wobble;
+}
+.bounceIn {
+	animation-name: bounceIn; animation-duration: 0.75s; -webkit-animation-duration: .75s; -webkit-animation-name: bounceIn;
+}
+.bounceInDown {
+	animation-name: bounceInDown; -webkit-animation-name: bounceInDown;
+}
+.bounceInLeft {
+	animation-name: bounceInLeft; -webkit-animation-name: bounceInLeft;
+}
+.bounceInRight {
+	animation-name: bounceInRight; -webkit-animation-name: bounceInRight;
+}
+.bounceInUp {
+	animation-name: bounceInUp; -webkit-animation-name: bounceInUp;
+}
+.bounceOut {
+	animation-name: bounceOut; animation-duration: 0.75s; -webkit-animation-duration: .75s; -webkit-animation-name: bounceOut;
+}
+.bounceOutDown {
+	animation-name: bounceOutDown; -webkit-animation-name: bounceOutDown;
+}
+.bounceOutLeft {
+	animation-name: bounceOutLeft; -webkit-animation-name: bounceOutLeft;
+}
+.bounceOutRight {
+	animation-name: bounceOutRight; -webkit-animation-name: bounceOutRight;
+}
+.bounceOutUp {
+	animation-name: bounceOutUp; -webkit-animation-name: bounceOutUp;
+}
+.fadeIn {
+	animation-name: fadeIn; -webkit-animation-name: fadeIn;
+}
+.fadeInDown {
+	animation-name: fadeInDown; -webkit-animation-name: fadeInDown;
+}
+.fadeInDownBig {
+	animation-name: fadeInDownBig; -webkit-animation-name: fadeInDownBig;
+}
+.fadeInLeft {
+	animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;
+}
+.fadeInLeftBig {
+	animation-name: fadeInLeftBig; -webkit-animation-name: fadeInLeftBig;
+}
+.fadeInRight {
+	animation-name: fadeInRight; -webkit-animation-name: fadeInRight;
+}
+.fadeInRightBig {
+	animation-name: fadeInRightBig; -webkit-animation-name: fadeInRightBig;
+}
+.fadeInUp {
+	animation-name: fadeInUp; -webkit-animation-name: fadeInUp;
+}
+.fadeInUpBig {
+	animation-name: fadeInUpBig; -webkit-animation-name: fadeInUpBig;
+}
+.fadeOut {
+	animation-name: fadeOut; -webkit-animation-name: fadeOut;
+}
+.fadeOutDown {
+	animation-name: fadeOutDown; -webkit-animation-name: fadeOutDown;
+}
+.fadeOutDownBig {
+	animation-name: fadeOutDownBig; -webkit-animation-name: fadeOutDownBig;
+}
+.fadeOutLeft {
+	animation-name: fadeOutLeft; -webkit-animation-name: fadeOutLeft;
+}
+.fadeOutLeftBig {
+	animation-name: fadeOutLeftBig; -webkit-animation-name: fadeOutLeftBig;
+}
+.fadeOutRight {
+	animation-name: fadeOutRight; -webkit-animation-name: fadeOutRight;
+}
+.fadeOutRightBig {
+	animation-name: fadeOutRightBig; -webkit-animation-name: fadeOutRightBig;
+}
+.fadeOutUp {
+	animation-name: fadeOutUp; -webkit-animation-name: fadeOutUp;
+}
+.fadeOutUpBig {
+	animation-name: fadeOutUpBig; -webkit-animation-name: fadeOutUpBig;
+}
+.animated.flip {
+	backface-visibility: visible; animation-name: flip; -webkit-animation-name: flip; -webkit-backface-visibility: visible;
+}
+.flipInX {
+	backface-visibility: visible !important; animation-name: flipInX; -webkit-animation-name: flipInX; -webkit-backface-visibility: visible;
+}
+.flipInY {
+	backface-visibility: visible !important; animation-name: flipInY; -webkit-animation-name: flipInY; -webkit-backface-visibility: visible;
+}
+.flipOutX {
+	backface-visibility: visible !important; animation-name: flipOutX; animation-duration: 0.75s; -webkit-animation-duration: .75s; -webkit-animation-name: flipOutX; -webkit-backface-visibility: visible;
+}
+.flipOutY {
+	backface-visibility: visible !important; animation-name: flipOutY; animation-duration: 0.75s; -webkit-animation-duration: .75s; -webkit-animation-name: flipOutY; -webkit-backface-visibility: visible;
+}
+.lightSpeedIn {
+	animation-name: lightSpeedIn; animation-timing-function: ease-out; -webkit-animation-name: lightSpeedIn; -webkit-animation-timing-function: ease-out;
+}
+.lightSpeedOut {
+	animation-name: lightSpeedOut; animation-timing-function: ease-in; -webkit-animation-name: lightSpeedOut; -webkit-animation-timing-function: ease-in;
+}
+.rotateIn {
+	animation-name: rotateIn; -webkit-animation-name: rotateIn;
+}
+.rotateInDownLeft {
+	animation-name: rotateInDownLeft; -webkit-animation-name: rotateInDownLeft;
+}
+.rotateInDownRight {
+	animation-name: rotateInDownRight; -webkit-animation-name: rotateInDownRight;
+}
+.rotateInUpLeft {
+	animation-name: rotateInUpLeft; -webkit-animation-name: rotateInUpLeft;
+}
+.rotateInUpRight {
+	animation-name: rotateInUpRight; -webkit-animation-name: rotateInUpRight;
+}
+.rotateOut {
+	animation-name: rotateOut; -webkit-animation-name: rotateOut;
+}
+.rotateOutDownLeft {
+	animation-name: rotateOutDownLeft; -webkit-animation-name: rotateOutDownLeft;
+}
+.rotateOutDownRight {
+	animation-name: rotateOutDownRight; -webkit-animation-name: rotateOutDownRight;
+}
+.rotateOutUpLeft {
+	animation-name: rotateOutUpLeft; -webkit-animation-name: rotateOutUpLeft;
+}
+.rotateOutUpRight {
+	animation-name: rotateOutUpRight; -webkit-animation-name: rotateOutUpRight;
+}
+.hinge {
+	animation-name: hinge; -webkit-animation-name: hinge;
+}
+.rollIn {
+	animation-name: rollIn; -webkit-animation-name: rollIn;
+}
+.rollOut {
+	animation-name: rollOut; -webkit-animation-name: rollOut;
+}
+.zoomIn {
+	animation-name: zoomIn; -webkit-animation-name: zoomIn;
+}
+.zoomInDown {
+	animation-name: zoomInDown; -webkit-animation-name: zoomInDown;
+}
+.zoomInLeft {
+	animation-name: zoomInLeft; -webkit-animation-name: zoomInLeft;
+}
+.zoomInRight {
+	animation-name: zoomInRight; -webkit-animation-name: zoomInRight;
+}
+.zoomInUp {
+	animation-name: zoomInUp; -webkit-animation-name: zoomInUp;
+}
+.zoomOut {
+	animation-name: zoomOut; -webkit-animation-name: zoomOut;
+}
+.zoomOutDown {
+	animation-name: zoomOutDown; -webkit-animation-name: zoomOutDown;
+}
+.zoomOutLeft {
+	animation-name: zoomOutLeft; -webkit-animation-name: zoomOutLeft;
+}
+.zoomOutRight {
+	animation-name: zoomOutRight; -webkit-animation-name: zoomOutRight;
+}
+.zoomOutUp {
+	animation-name: zoomOutUp; -webkit-animation-name: zoomOutUp;
+}
+.slideInDown {
+	animation-name: slideInDown; -webkit-animation-name: slideInDown;
+}
+.slideInLeft {
+	animation-name: slideInLeft; -webkit-animation-name: slideInLeft;
+}
+.slideInRight {
+	animation-name: slideInRight; -webkit-animation-name: slideInRight;
+}
+.slideInUp {
+	animation-name: slideInUp; -webkit-animation-name: slideInUp;
+}
+.slideOutDown {
+	animation-name: slideOutDown; -webkit-animation-name: slideOutDown;
+}
+.slideOutLeft {
+	animation-name: slideOutLeft; -webkit-animation-name: slideOutLeft;
+}
+.slideOutRight {
+	animation-name: slideOutRight; -webkit-animation-name: slideOutRight;
+}
+.slideOutUp {
+	animation-name: slideOutUp; -webkit-animation-name: slideOutUp;
+}
+[hidefocus] {
+	outline: 0px;
+}
+summary {
+	outline: 0px;
+}
+.wp_pdf_player pre {
+	font-family: inherit;
+}
+.wp_pdf_player code {
+	font-family: inherit;
+}
+.wp_pdf_player kbd {
+	font-family: inherit;
+}
+.wp_pdf_player samp {
+	font-family: inherit;
+}
+.wp_pdf_player q::before {
+	content: none;
+}
+.wp_pdf_player q::after {
+	content: none;
+}
+.wp_pdf_player a {
+	cursor: pointer;
+}
+.wp_pdf_player button {
+	cursor: pointer;
+}
+.wp_pdf_player h1 {
+	font-weight: bold;
+}
+.wp_pdf_player h2 {
+	font-weight: bold;
+}
+.wp_pdf_player h3 {
+	font-weight: bold;
+}
+.wp_pdf_player h4 {
+	font-weight: bold;
+}
+.wp_pdf_player h5 {
+	font-weight: bold;
+}
+.wp_pdf_player h6 {
+	font-weight: bold;
+}
+.wp_pdf_player em {
+	font-weight: bold;
+}
+.wp_pdf_player strong {
+	font-weight: bold;
+}
+.wp_pdf_player b {
+	font-weight: bold;
+}
+.wp_pdf_player del {
+	text-decoration: none;
+}
+.wp_pdf_player ins {
+	text-decoration: none;
+}
+.wp_pdf_player u {
+	text-decoration: none;
+}
+.wp_pdf_player s {
+	text-decoration: none;
+}
+.wp_pdf_player a {
+	text-decoration: none;
+}
+.wp_pdf_player a:hover {
+	text-decoration: none;
+}
+.wp_pdf_player textarea {
+	font: 12px/1.14 arial, 宋体; outline: 0px; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal;
+}
+.wp_pdf_player input {
+	font: 12px/1.14 arial, 宋体; outline: 0px; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal;
+}
+.wp_pdf_player button {
+	font: 12px/1.14 arial, 宋体; outline: 0px; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal;
+}
+.wp_pdf_player select {
+	font: 12px/1.14 arial, 宋体; outline: 0px; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal;
+}
+.wp_pdf_player keygen {
+	font: 12px/1.14 arial, 宋体; outline: 0px; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal;
+}
+.wp_pdf_player legend {
+	font: 12px/1.14 arial, 宋体; outline: 0px; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal;
+}
+.wp_pdf_player .section {
+	background: rgb(255, 255, 255);
+}
+.wp_pdf_player .p-cont {
+	width: 100%; position: relative;
+}
+.wp_pdf_player .p-wrap {
+	height: 100%; -ms-overflow-x: hidden; -ms-overflow-y: auto;
+}
+.wp_pdf_player .p-list {
+	width: 100%; position: relative; -webkit-box-pack: center; -webkit-box-align: center;
+}
+.wp_pdf_player .p-list img {
+	margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;
+}
+.wp_pdf_player .barset {
+	text-align: center;
+}
+.wp_pdf_player .barset img {
+	margin-top: 6px; margin-right: 5px; margin-left: 5px; vertical-align: middle;
+}
+.wp_pdf_player .barset span {
+	font-size: 0.95rem;
+}
+.wp_pdf_player img {
+	vertical-align: middle;
+}
+#canvas {
+	background: rgb(26, 26, 26); left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; display: none; position: fixed; z-index: 2147483647;
+}
+.wp_pdf_player .m-cont {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 100%; right: 0px; bottom: 0px; position: fixed; z-index: 99;
+}
+.wp_pdf_player .m-look-pic {
+	float: right;
+}
+.wp_pdf_player .m-head {
+	left: 0px; top: 0px; width: 100%; height: 42px; text-align: center; color: rgb(255, 255, 255); font-size: 16px; position: absolute; z-index: 100;
+}
+.wp_pdf_player .m-go-back {
+	left: 6px; top: 0px; width: 40px; height: 42px; color: rgb(255, 255, 255); line-height: 42px; font-size: 16px; display: inline-block; position: absolute;
+}
+.wp_pdf_player .m-look-pic {
+	margin: 10px 12px 0px 0px; height: 22px; text-align: center; color: rgb(255, 255, 255); line-height: 22px; float: right; display: block;
+}
+.wp_pdf_player .m-box {
+	width: 100%; height: 100%; position: relative;
+}
+.wp_pdf_player .m-box ul {
+	left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute;
+}
+.wp_pdf_player .m-box ul li {
+	width: 100%; height: 100%; position: absolute; -webkit-box-pack: center; -webkit-box-align: center; box-pack: center; box-align: center;
+}
+.wp_pdf_player .m-box ul li img {
+	margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;
+}
+.wp_pdf_player .swiper-page {
+	left: 0px; width: 100%; height: 20px; text-align: center; bottom: 0px; color: rgb(255, 255, 255); line-height: 20px; font-size: 16px; position: absolute; z-index: 99;
+}
+.wp_pdf_player .swiper-bg {
+	background: rgb(0, 0, 0); width: 100%; height: 20px; opacity: 0.7;
+}
+.wp_pdf_player .m-info {
+	background: rgb(0, 0, 0); padding: 10px; left: 0px; width: 100%; height: 30px; bottom: 0px; color: rgb(255, 255, 255); line-height: 30px; font-size: 14px; position: absolute; z-index: 99; opacity: 0.8;
+}
+.wp_pdf_player .m-info-index {
+	margin-left: 10px; float: left;
+}
+.wp_pdf_player a:hover {
+	color: rgb(46, 109, 164);
+}
+.wp_pdf_player input {
+	border: 1px solid rgb(204, 204, 204); border-image: none; width: 30px; height: 18px;
+}
+.wp_pdf_player .p-head {
+	width: 100%; height: 30px; line-height: 30px;
+}
+.wp_pdf_player .p-cont {
+	height: 670px; border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.wp_pdf_player .p-prev {
+	margin: 0px 5px;
+}
+.p-next {
+	margin: 0px 5px;
+}
+.p-active {
+	margin: 0px 5px;
+}
+.p-pages {
+	margin: 0px 5px;
+}
+.p-page {
+	margin: 0px 5px;
+}
+.p-go {
+	margin: 0px 5px;
+}
+.p-next {
+	margin: 0px 5px;
+}
+.wp_pdf_player .prev {
+	background: rgb(255, 172, 89); margin: 9px 0px 5px 5px; padding: 2px 5px; border-radius: 2px; color: rgb(255, 255, 255); font-family: Arial, "Microsoft YaHei"; font-size: 14px; text-decoration: none;
+}
+.wp_pdf_player .swiper-lazy-preloader {
+	transform-origin: 50% 50%; animation:swiper-preloader-spin 1s steps(12, end) infinite; left: 50%; top: 50%; width: 42px; height: 42px; margin-top: -21px; margin-left: -21px; position: absolute; z-index: 10; -webkit-transform-origin: 50%; -moz-transform-origin: 50%; -webkit-animation: swiper-preloader-spin 1s steps(12, end) infinite; -moz-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+}
+.wp_pdf_player .swiper-lazy-preloader::after {
+	background-position: 50%; width: 100%; height: 100%; display: block; content: ""; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); background-repeat: no-repeat; background-size: 100%; -webkit-background-size: 100%;
+}
+.wp_pdf_player .border-1px {
+	position: relative;
+}
+.wp_pdf_player .border-1px::after {
+	left: 0px; width: 100%; bottom: 0px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; display: block; position: absolute; content: " ";
+}
+@media not all, not all
+{
+.border-1px::after {
+	transform: scaleY(0.7); -webkit-transform: scaleY(0.7);
+}
+}
+@media not all, not all
+{
+.border-1px::after {
+	transform: scaleY(0.5); -webkit-transform: scaleY(0.5);
+}
+}
+@media all and (max-width:720px)
+{
+.p-main {
+	margin: 0px auto; width: 70%;
+}
+}
+.wp_pdf_player .p-alert {
+	background: rgba(0, 0, 0, 0.5); border-radius: 10px; left: 50%; top: 50%; width: 100px; height: 50px; text-align: center; color: rgb(255, 255, 255); line-height: 50px; font-size: 16px; margin-top: -25px; margin-left: -50px; display: none; position: fixed; z-index: 101;
+}
+.wp_pdf_player .iconfont {
+	font-size: 0.95rem;
+}
+.wp_pdf_player select {
+	background: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); border-image: none; width: 20%; height: 24px; color: rgb(0, 0, 0); line-height: 24px; font-size: 1.1em;
+}
+.wp_pdf_player select {
+	background: url("../img/123.png") no-repeat right; padding-right: 14px; padding-left: 5px; appearance: none; -moz-appearance: none; -webkit-appearance: none;
+}
+.wp_pdf_player select::-ms-expand {
+	display: none;
+}
+.wp_pdf_player .p-screen {
+	float: left; cursor: pointer;
+}
+.wp_pdf_player .p-litter {
+	float: right; cursor: pointer;
+}
+.wp_pdf_player .iconfont {
+	font-family: "iconfont" !important; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.wp_pdf_player .icon-Left::before {
+	content: "\e600";
+}
+.wp_pdf_player .icon-right::before {
+	content: "\e613";
+}
+.wp_pdf_player .icon-you::before {
+	content: "\e615";
+}
+.wp_pdf_player {
+	border: 0px currentColor; border-image: none;
+}
+.wp_pdf_player .pictureswitch {
+	border: 1px solid rgb(204, 204, 204); border-image: none; margin-right: 2px;
+}

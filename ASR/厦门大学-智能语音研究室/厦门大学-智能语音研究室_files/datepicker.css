@@ -1,0 +1,171 @@
+.bbit-dp {
+	background: rgb(255, 255, 255); padding: 0px; border: 1px solid rgb(113, 139, 183); border-image: none; left: 0px; top: 0px; width: 175px; overflow: hidden; font-family: tahoma,verdana,sans-serif; font-size: 11px; visibility: hidden; position: absolute; -ms-zoom: 1;
+}
+.bbit-dp em {
+	font-style: normal; font-weight: normal;
+}
+.bbit-dp table {
+	width: 100%; border-collapse: separate; table-layout: fixed;
+}
+.bbit-dp td th {
+	margin: 0px;
+}
+.bbit-dp-top-center {
+	font: 11px/normal tahoma, verdana, helvetica; text-align: center; color: rgb(255, 255, 255); white-space: nowrap; cursor: pointer; font-size-adjust: none; font-stretch: normal;
+}
+.bbit-dp-top-center button {
+	background: url("images/dp/btn-arrow-light.gif") no-repeat right top; font: 11px/normal tahoma, verdana, helvetica; margin: 0px; outline: 0px; border: 0px currentColor; border-image: none; width: auto; color: rgb(255, 255, 255); overflow: visible; padding-right: 10px; padding-left: 3px; cursor: pointer; font-size-adjust: none; font-stretch: normal; -moz-outline: 0 none;
+}
+.ie .bbit-dp-top-center button {
+	
+}
+.bbit-dp-top-right {
+	height: 21px;
+}
+.bbit-dp .bbit-dp-top {
+	background: url("images/dp/hd-sprite.gif") repeat-x 0px -83px;
+}
+.bbit-dp-top-right {
+	width: 18px;
+}
+.bbit-dp-top-left {
+	width: 18px;
+}
+.bbit-dp-top-right {
+	text-align: right;
+}
+.bbit-dp-top-right a {
+	background-position: center; width: 16px; height: 16px; display: block; cursor: pointer; opacity: 0.6; background-repeat: no-repeat; -moz-opacity: 0.6;
+}
+.bbit-dp-top-left a {
+	background-position: center; width: 16px; height: 16px; display: block; cursor: pointer; opacity: 0.6; background-repeat: no-repeat; -moz-opacity: 0.6;
+}
+.bbit-dp-top-right a:hover {
+	opacity: 1; -moz-opacity: 1;
+}
+.bbit-dp-top-left a:hover {
+	opacity: 1; -moz-opacity: 1;
+}
+.bbit-dp-top-left a {
+	background: url("images/dp/left-btn.gif"); margin-left: 2px;
+}
+.bbit-dp-top-right a {
+	background: url("images/dp/right-btn.gif"); margin-left: 2px;
+}
+.bbit-dp-inner th {
+	border-collapse: separate;
+}
+.bbit-dp-inner td {
+	border-collapse: separate;
+}
+.bbit-dp-inner th {
+	background: url("images/dp/glass-bg.gif") repeat-x left top rgb(223, 236, 251); padding: 0px; width: 25px; text-align: right !important; color: rgb(35, 61, 109); border-bottom-color: rgb(163, 186, 217); border-bottom-width: 1px; border-bottom-style: solid; border-collapse: separate; cursor: default;
+}
+.bbit-dp-inner th span {
+	font: 10px/normal arial, helvetica, tahoma, sans-serif; padding: 2px 7px 2px 2px; display: block; font-size-adjust: none; font-stretch: normal;
+}
+.bbit-dp-inner td {
+	padding: 0px; border: 1px solid rgb(255, 255, 255); border-image: none; text-align: right; color: black; border-collapse: separate;
+}
+.bbit-dp a {
+	color: black; text-decoration: none; -ms-zoom: 1;
+}
+.bbit-dp-inner td a {
+	font: 11px/normal arial, helvetica, tahoma, sans-serif; padding: 2px 5px; text-align: right; display: block; font-size-adjust: none; font-stretch: normal;
+}
+.bbit-dp-inner .bbit-dp-active {
+	color: black; cursor: pointer;
+}
+.bbit-dp-inner .bbit-dp-selected a {
+	background: url("../images/default/shared/glass-bg.gif") repeat-x left top rgb(223, 236, 251); padding: 1px 4px; border: 1px solid rgb(141, 178, 227); border-image: none;
+}
+.bbit-dp-inner .bbit-dp-today a {
+	padding: 1px 4px; border: 1px solid darkred; border-image: none;
+}
+.bbit-dp-inner .bbit-dp-selected span {
+	font-weight: bold;
+}
+.bbit-dp-inner .bbit-dp-prevday a {
+	color: rgb(170, 170, 170); text-decoration: none !important;
+}
+.bbit-dp-inner .bbit-dp-nextday a {
+	color: rgb(170, 170, 170); text-decoration: none !important;
+}
+.bbit-dp-inner a:hover {
+	background: rgb(221, 236, 254); color: black; text-decoration: none !important;
+}
+.bbit-dp-inner bbit-dp-disabled a:hover {
+	background: rgb(221, 236, 254); color: black; text-decoration: none !important;
+}
+.bbit-dp-inner .bbit-dp-disabled a {
+	background: rgb(238, 238, 238); color: rgb(187, 187, 187); cursor: default;
+}
+.bbit-dp-bottom {
+	background: url("images/dp/glass-bg.gif") repeat-x left top rgb(223, 236, 251); padding: 2px; border-top-color: rgb(163, 186, 217); border-top-width: 1px; border-top-style: solid;
+}
+.bbit-dp-mp {
+	background: white; left: 0px; top: 0px; display: none; position: absolute;
+}
+.bbit-dp-mp td {
+	font: 11px/normal arial, helvetica, tahoma, sans-serif; padding: 2px; font-size-adjust: none; font-stretch: normal;
+}
+td.bbit-dp-mp-month {
+	border: 0px currentColor; border-image: none; width: 25%; text-align: center; vertical-align: middle;
+}
+td.bbit-dp-mp-year {
+	border: 0px currentColor; border-image: none; width: 25%; text-align: center; vertical-align: middle;
+}
+td.bbit-dp-mp-ybtn {
+	border: 0px currentColor; border-image: none; width: 25%; text-align: center; vertical-align: middle;
+}
+.bbit-dp-mp-ok {
+	margin-right: 3px;
+}
+.bbit-dp-mp-btns button {
+	background: rgb(8, 55, 114); border-width: 1px; border-style: solid; border-color: rgb(51, 102, 204) rgb(0, 0, 85) rgb(0, 0, 85) rgb(51, 102, 204); font: 11px/normal arial, helvetica, tahoma, sans-serif; padding: 1px 3px; border-image: none; text-align: center; color: white; text-decoration: none !important; cursor: pointer; font-size-adjust: none; font-stretch: normal;
+}
+.bbit-dp-mp-btns {
+	background: url("images/dp/glass-bg.gif") repeat-x left top rgb(223, 236, 251);
+}
+.bbit-dp-mp-btns td {
+	text-align: center; border-top-color: rgb(197, 210, 223); border-top-width: 1px; border-top-style: solid;
+}
+td.bbit-dp-mp-month a {
+	padding: 2px 4px; text-align: center; color: rgb(21, 66, 139); text-decoration: none; display: block;
+}
+td.bbit-dp-mp-year a {
+	padding: 2px 4px; text-align: center; color: rgb(21, 66, 139); text-decoration: none; display: block;
+}
+td.bbit-dp-mp-month a:hover {
+	background: rgb(221, 236, 254); color: rgb(21, 66, 139); text-decoration: none; cursor: pointer;
+}
+td.bbit-dp-mp-year a:hover {
+	background: rgb(221, 236, 254); color: rgb(21, 66, 139); text-decoration: none; cursor: pointer;
+}
+td.bbit-dp-mp-sel a {
+	background: url("images/dp/glass-bg.gif") repeat-x left top rgb(223, 236, 251); padding: 1px 3px; border: 1px solid rgb(141, 178, 227); border-image: none;
+}
+.bbit-dp-mp-ybtn a {
+	background: url("images/dp/tool-sprites.gif") no-repeat; margin: 0px auto; width: 15px; height: 15px; overflow: hidden; display: block; cursor: pointer;
+}
+.bbit-dp-mp-ybtn a.bbit-dp-mp-next {
+	background-position: 0px -120px;
+}
+.bbit-dp-mp-ybtn a.bbit-dp-mp-next:hover {
+	background-position: -15px -120px;
+}
+.bbit-dp-mp-ybtn a.bbit-dp-mp-prev {
+	background-position: 0px -105px;
+}
+.bbit-dp-mp-ybtn a.bbit-dp-mp-prev:hover {
+	background-position: -15px -105px;
+}
+.bbit-dp-mp-ybtn {
+	text-align: center;
+}
+td.bbit-dp-mp-sep {
+	border-right-color: rgb(197, 210, 223); border-right-width: 1px; border-right-style: solid;
+}
+.bbit-dp-input {
+	width: 100px; height: 18px; padding-left: 4px;
+}
