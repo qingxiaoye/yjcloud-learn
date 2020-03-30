@@ -1,0 +1,32 @@
+SELECT
+a.detail_rule_id as id,
+	a.rule_type_name,
+	a.template_name,
+	a.rule_name,
+	SUM( cnt_rule ) AS cnt_rules,
+	count( IF ( a.file_status = 4, TRUE, NULL ) ) AS cnt_review,
+	COUNT( IF ( a.hit_status = 1, TRUE, NULL ) ) AS cnt_hit,
+	COUNT( IF ( a.review_status = 1, TRUE, NULL ) ) AS cnt_qi_corr
+FROM
+	(
+	SELECT
+		qi_info_traffic.file_status,
+		qi_info_traffic.hit_status,
+		qi_info_traffic.review_status,
+		qi_results_deatails.CALL_id,
+		qi_results_deatails.detail_rule_id,
+		qi_info_map_rule.rule_type_name,
+		qi_info_map_rule.rule_name,
+		qi_info_map_rule.template_name,
+		COUNT( 1 ) AS cnt_rule
+	FROM
+		qi_results_deatails
+		JOIN qi_info_map_rule ON qi_info_map_rule.id = qi_results_deatails.detail_rule_id
+		JOIN qi_info_traffic ON qi_results_deatails.call_id = qi_info_traffic.call_id
+	WHERE qi_results_deatails.is_deleted=0 and qi_info_map_rule.is_deleted=0 and qi_info_traffic.is_deleted=0
+	GROUP BY		qi_results_deatails.CALL_id
+,
+		qi_results_deatails.detail_rule_id
+	) a
+GROUP BY
+	detail_rule_id

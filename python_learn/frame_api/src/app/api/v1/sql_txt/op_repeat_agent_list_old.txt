@@ -1,0 +1,22 @@
+SELECT
+qi_info_user.id,
+	qi_info_traffic.agent_id,
+	qi_info_user.nickname,
+	qi_info_branch.branch_code,
+	qi_info_branch.branch_name,
+	COUNT( 1 ) AS cnt_total,
+	count( IF ( qi_results_repeat_calls.is_solved = 0, TRUE, NULL ) ) AS cnt_un_once
+FROM
+	qi_info_branch
+	JOIN qi_info_user ON qi_info_branch.id = qi_info_user.bid
+	JOIN qi_info_traffic ON qi_info_user.agent_id = qi_info_traffic.agent_id
+	LEFT JOIN `qi_results_repeat_calls` ON qi_info_traffic.call_id = qi_results_repeat_calls.call_id
+	AND qi_results_repeat_calls.is_deleted = 0
+WHERE
+	qi_info_traffic.is_deleted = 0
+	AND qi_info_user.is_deleted = 0
+	AND qi_info_branch.is_deleted = 0
+			{sql_cond}
+GROUP BY
+	qi_info_traffic.agent_id
+order by qi_info_user.id

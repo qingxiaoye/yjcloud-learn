@@ -1,0 +1,14 @@
+SELECT
+	UNIX_TIMESTAMP( min(call_start_time) ) AS time,
+	count( * ) AS cnt_hit_rules
+FROM
+	qi_results_deatails
+	JOIN `qi_info_traffic` ON qi_results_deatails.call_id = qi_info_traffic.call_id
+	JOIN qi_info_map_rule ON qi_results_deatails.detail_rule_id = qi_info_map_rule.id
+WHERE
+	qi_results_deatails.is_deleted = 0
+	AND qi_info_traffic.is_deleted = 0
+	AND qi_info_map_rule.is_deleted = 0
+	AND qi_info_traffic.call_start_time IS NOT NULL {{sql_cond}}
+GROUP BY
+	FROM_UNIXTIME( UNIX_TIMESTAMP( call_start_time ), '{period}' );

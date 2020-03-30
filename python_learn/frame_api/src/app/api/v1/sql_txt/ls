@@ -1,0 +1,17 @@
+    q = db_v1.session.query(QiInfoTraffic.agent_id.label('agent_id'),
+                            QiInfoUser.nickname.label('nickname'),
+                            QiInfoBranch.branch_code.label('branch_code'),
+                            QiInfoBranch.branch_name.label('branch_name'),
+                            func.count('*').label('cnt_total'),
+                            ).filter(
+                            QiInfoBranch.is_deleted == 0,
+                            QiInfoUser.is_deleted == 0,
+                            QiInfoTraffic.is_deleted == 0,
+                            QiInfoBranch.id == QiInfoUser.bid,
+                            QiInfoUser.agent_id == QiInfoTraffic.agent_id,
+                            ).join(QiResultsRepeatCall, QiInfoTraffic.call_id == QiResultsRepeatCall.call_id,isouter=True).group_by(QiInfoBranch.branch_code)
+    if form.call_time_left.data and form.call_time_left.data != '':
+        q = q.filter(QiInfoTraffic.call_start_time >= datetime.fromtimestamp(form.call_time_left.data))
+    if form.call_time_right.data and form.call_time_right.data != '':
+        q = q.filter(QiInfoTraffic.call_start_time <= datetime.fromtimestamp(form.call_time_right.data))
+    rvs = q.all()

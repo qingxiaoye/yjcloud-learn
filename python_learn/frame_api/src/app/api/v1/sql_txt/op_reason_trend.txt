@@ -1,0 +1,16 @@
+SELECT
+	UNIX_TIMESTAMP( MIN( call_start_time ) ) AS time,
+	COUNT( 1 ) AS cnt_reason,
+	GROUP_CONCAT( call_reason_type )
+FROM
+	qi_info_traffic
+	JOIN qi_results_business_analysis ON qi_info_traffic.call_id = qi_results_business_analysis.call_id
+	join   qi_info_call_reason_type on qi_results_business_analysis.call_reason_type=qi_info_call_reason_type.type_code
+WHERE
+	qi_info_traffic.is_deleted = 0
+	and qi_results_business_analysis.is_deleted = 0
+	and qi_info_call_reason_type.is_deleted=0
+{{sql_cond}}
+GROUP BY
+	FROM_UNIXTIME( UNIX_TIMESTAMP( call_start_time ),'{period}' )
+order by qi_info_traffic.call_start_time

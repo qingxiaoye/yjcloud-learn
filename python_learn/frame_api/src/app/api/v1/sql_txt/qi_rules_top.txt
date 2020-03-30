@@ -1,0 +1,12 @@
+	SELECT
+		detail_rule_id,
+		COUNT( 1 ) AS cnt_rules 
+	FROM
+		qi_results_deatails details
+		JOIN `qi_info_traffic` traffic ON traffic.call_id = details.call_id 
+	WHERE
+		details.is_deleted = 0 
+		AND traffic.is_deleted = 0 {sql_cond}
+	GROUP BY
+		detail_rule_id
+	order BY COUNT( 1 ) DESC

@@ -1,0 +1,11 @@
+SELECT
+	COUNT( 1 ) AS cnt_total,
+	count( IF ( qi_results_repeat_calls.repeat_id, TRUE, NULL ) ) AS cnt_un_once,
+	count( IF ( qi_results_repeat_calls.is_first_call = 0, TRUE, NULL ) ) AS cnt_repeat
+FROM
+	qi_info_traffic
+	LEFT JOIN `qi_results_repeat_calls` ON qi_info_traffic.call_id = qi_results_repeat_calls.call_id
+	AND qi_results_repeat_calls.is_deleted = 0
+WHERE
+	qi_info_traffic.is_deleted = 0
+		{sql_cond}

@@ -1,0 +1,22 @@
+SELECT
+ 	bus_type.type_name,
+	CAST( AVG( qi_call_duration.silence_duration ) AS DECIMAL ( 10, 1 ) ) AS avg_sili_duration
+FROM
+	qi_call_duration
+	join 	(
+	SELECT
+		qi_results_business_analysis.call_id AS call_id,
+		qi_info_business_type.type_name AS type_name,
+		qi_info_business_type.type_code AS type_code
+	FROM
+		qi_info_business_type
+		JOIN qi_results_business_analysis ON qi_info_business_type.type_code = qi_results_business_analysis.business_type
+	) bus_type  on qi_call_duration.call_id=bus_type.call_id
+WHERE
+	qi_call_duration.is_deleted = 0
+	AND qi_call_duration.call_start_time IS NOT NULL
+ 		{{sql_cond}}
+
+ GROUP BY  	bus_type.type_code
+ ORDER BY avg_sili_duration desc
+limit {limit}

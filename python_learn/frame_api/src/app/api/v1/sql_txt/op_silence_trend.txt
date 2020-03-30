@@ -1,0 +1,11 @@
+SELECT
+	UNIX_TIMESTAMP( min( qi_call_duration.call_start_time ) ) time,
+	CAST( AVG( qi_call_duration.silence_duration ) AS DECIMAL ( 10, 0 ) ) AS avg_silence_duration
+FROM
+	qi_call_duration
+WHERE
+	qi_call_duration.is_deleted = 0
+	AND qi_call_duration.call_start_time IS NOT NULL
+	{{sql_cond}}
+GROUP BY
+	FROM_UNIXTIME( UNIX_TIMESTAMP( qi_call_duration.call_start_time ), '{period}' )

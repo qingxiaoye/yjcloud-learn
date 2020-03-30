@@ -1,0 +1,19 @@
+SELECT
+	UNIX_TIMESTAMP( MIN( qi_info_traffic.call_start_time ) ) AS time,
+	CAST( AVG( qi_score_call.qc_score ) AS DECIMAL ( 10, 1 ) ) AS avg_score
+FROM
+	qi_score_call
+	JOIN qi_info_traffic ON qi_score_call.call_id = qi_info_traffic.call_id
+	JOIN qi_info_user ON qi_info_traffic.agent_id = qi_info_user.agent_id
+	JOIN qi_info_branch ON qi_info_user.bid = qi_info_branch.id
+WHERE
+	qi_score_call.is_deleted = 0
+	AND qi_info_traffic.is_deleted = 0
+	AND qi_info_user.is_deleted = 0
+	AND qi_info_branch.is_deleted = 0
+	AND qi_info_traffic.call_start_time IS NOT NULL
+	 {{sql_cond}}
+GROUP BY
+	FROM_UNIXTIME( UNIX_TIMESTAMP( qi_info_traffic.call_start_time ), '{period}' )
+ORDER BY
+	qi_info_traffic.call_start_time ASC

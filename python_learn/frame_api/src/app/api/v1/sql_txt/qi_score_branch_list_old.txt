@@ -1,0 +1,97 @@
+SELECT
+	cnt_stat.branch_name,
+	cnt_stat.branch_code,
+	cnt_stat.sup_branch_name,
+	cnt_stat.sup_branch_code,
+	cnt_stat.avg_score avg_score,
+	agent.cnt_agent cnt_agent,
+	rules.hit_rules hit_rules,
+	cnt_stat.cnt_total cnt_total,
+	cnt_stat.cnt_qi cnt_qi,
+	cnt_stat.cnt_review cnt_review,
+	cnt_stat.cnt_hit cnt_hit,
+	cnt_stat.cnt_qi_corr cnt_qi_corr
+FROM
+	(
+	SELECT
+		qi_info_user.agent_id agent_id,
+		qi_info_user.bid bid,
+		branch.branch_name branch_name,
+		branch.branch_code branch_code,
+		sup_branch.branch_name sup_branch_name,
+		sup_branch.branch_code sup_branch_code,
+		CAST( AVG( qi_score_call.qc_score ) AS DECIMAL ( 10, 1 ) ) AS avg_score,
+		COUNT( 1 ) AS cnt_total,
+		count( IF ( qi_info_traffic.file_status >= 3, TRUE, NULL ) ) AS cnt_qi,
+		count( IF ( qi_info_traffic.file_status = 4, TRUE, NULL ) ) AS cnt_review,
+		COUNT( IF ( qi_info_traffic.hit_status = 1, TRUE, NULL ) ) AS cnt_hit,
+		COUNT( IF ( qi_info_traffic.review_status = 1, TRUE, NULL ) ) AS cnt_qi_corr
+	FROM
+		qi_info_traffic
+		LEFT JOIN qi_score_call ON qi_info_traffic.call_id = qi_score_call.call_id
+		AND qi_score_call.is_deleted = 0
+		JOIN qi_info_user ON qi_info_traffic.agent_id = qi_info_user.agent_id
+		JOIN qi_info_branch branch ON qi_info_user.bid = branch.id
+		JOIN qi_info_branch sup_branch ON branch.superior_id = sup_branch.id
+		WHERE
+		qi_info_traffic.is_deleted = 0
+		AND qi_info_user.is_deleted = 0
+		AND branch.is_deleted = 0
+		AND sup_branch.is_deleted = 0
+		{sql_cond}
+
+	GROUP BY
+		qi_info_user.bid
+	) cnt_stat
+	JOIN (
+	SELECT
+		rules_branch.bid,
+		group_concat( rules_branch.template_rule ORDER BY rules_branch.cnt_rule DESC SEPARATOR ';' ) AS hit_rules
+	FROM
+		(
+		SELECT
+			c.agent_id,
+			c.detail_rule_id,
+			c.bid,
+			CONCAT( c.template_name, '-', c.rule_name ) AS template_rule,
+			c.cnt_rule
+		FROM
+			(
+			SELECT
+				qi_info_user.agent_id AS agent_id,
+				qi_info_user.bid AS bid,
+				qi_results_deatails.detail_rule_id AS detail_rule_id,
+				qi_info_map_rule.template_name,
+				qi_info_map_rule.rule_name,
+				COUNT( 1 ) AS cnt_rule
+			FROM
+				qi_results_deatails
+				JOIN qi_info_traffic ON qi_results_deatails.call_id = qi_info_traffic.call_id
+				JOIN qi_info_user ON qi_info_traffic.agent_id = qi_info_user.agent_id
+				JOIN qi_info_branch branch ON qi_info_user.bid = branch.id
+				JOIN qi_info_map_rule ON qi_results_deatails.detail_rule_id = qi_info_map_rule.id
+			WHERE
+				qi_results_deatails.is_deleted = 0
+				AND qi_info_traffic.is_deleted = 0
+				AND qi_info_user.is_deleted = 0
+				AND branch.is_deleted = 0
+ {sql_cond}
+			GROUP BY
+				qi_info_user.bid,
+				qi_results_deatails.detail_rule_id
+			) c
+		) rules_branch
+	GROUP BY
+		rules_branch.bid
+	) rules ON cnt_stat.bid = rules.bid
+	JOIN (
+	SELECT
+		qi_info_user.bid AS bid,
+		COUNT( 1 ) AS cnt_agent
+	FROM
+		`qi_info_user`
+	WHERE
+		qi_info_user.is_deleted = 0
+	GROUP BY
+	qi_info_user.bid
+	) agent ON cnt_stat.bid = agent.bid

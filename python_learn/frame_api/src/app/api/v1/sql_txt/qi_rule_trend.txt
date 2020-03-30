@@ -1,0 +1,14 @@
+SELECT
+	FROM_UNIXTIME( UNIX_TIMESTAMP( call_start_time ), '{period}' ) AS time,
+	details.detail_rule_id,
+	count( * ) AS cnt_hit_rule
+FROM
+	qi_results_deatails details
+	JOIN `qi_info_traffic` traffic ON traffic.call_id = details.call_id 
+WHERE
+	details.is_deleted = 0 
+	AND traffic.is_deleted = 0
+	AND traffic.call_start_time >0
+
+GROUP BY
+	FROM_UNIXTIME( UNIX_TIMESTAMP( call_start_time ), '{period}' )

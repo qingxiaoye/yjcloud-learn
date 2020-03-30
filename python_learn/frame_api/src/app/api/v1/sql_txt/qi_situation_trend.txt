@@ -1,0 +1,14 @@
+SELECT
+	UNIX_TIMESTAMP( qi_info_traffic.call_start_time ) AS time,
+	COUNT( 1 ) AS cnt_total,
+	count( IF ( qi_info_traffic.file_status >= 3, TRUE, NULL ) ) AS cnt_qi,
+	count( IF ( qi_info_traffic.file_status = 4, TRUE, NULL ) ) AS cnt_review,
+	COUNT( IF ( qi_info_traffic.review_status = 1, TRUE, NULL ) ) AS cnt_qi_corr,
+	COUNT( IF ( qi_info_traffic.hit_status = 1, TRUE, NULL ) ) AS cnt_hit
+FROM
+	qi_info_traffic
+WHERE
+qi_info_traffic.is_deleted=0  and qi_info_traffic.call_start_time is not null  {{sql_cond}}
+GROUP BY
+FROM_UNIXTIME( UNIX_TIMESTAMP( qi_info_traffic.call_start_time ), '{period}' )
+order by qi_info_traffic.call_start_time asc;

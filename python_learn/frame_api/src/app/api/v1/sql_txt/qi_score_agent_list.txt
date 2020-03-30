@@ -1,0 +1,63 @@
+SELECT
+	qi_info_branch.branch_name AS branch_name,
+	qi_info_branch.branch_code AS branch_code,
+	qi_info_user.agent_id,
+	qi_info_user.nickname AS nickname,
+	CAST( AVG( qi_score_call.qc_score ) AS DECIMAL ( 10, 1 ) ) AS avg_score,
+	rules.template_rule,
+	COUNT( 1 ) AS cnt_total,
+	count( IF ( qi_info_traffic.file_status >= 3, TRUE, NULL ) ) AS cnt_qi,
+	count( IF ( qi_info_traffic.file_status = 4, TRUE, NULL ) ) AS cnt_review,
+	COUNT( IF ( qi_info_traffic.hit_status = 1, TRUE, NULL ) ) AS cnt_hit,
+	COUNT( IF ( qi_info_traffic.review_status = 1, TRUE, NULL ) ) AS cnt_qi_corr
+FROM
+	qi_info_traffic
+	LEFT JOIN qi_score_call ON qi_info_traffic.call_id = qi_score_call.call_id
+	AND qi_score_call.is_deleted = 0
+	JOIN qi_info_user ON qi_info_traffic.agent_id = qi_info_user.agent_id
+	JOIN qi_info_branch ON qi_info_user.bid = qi_info_branch.id
+	JOIN (
+	SELECT
+		a.agent_id,
+		group_concat( a.template_rule ORDER BY a.cnt_rule DESC SEPARATOR ';' ) AS template_rule
+	FROM
+		(
+		SELECT
+			c.agent_id,
+			c.detail_rule_id,
+			CONCAT( c.template_name, '-', c.rule_name ) AS template_rule,
+			c.cnt_rule
+		FROM
+			(
+			SELECT
+				qi_info_traffic.agent_id,
+				qi_results_deatails.detail_rule_id,
+				qi_info_map_rule.rule_name,
+				qi_info_map_rule.template_name,
+				COUNT( 1 ) AS cnt_rule
+			FROM
+			    qi_info_user
+				join qi_info_traffic.agent_id on qi_info_user.agent_id =qi_info_traffic.agent_id
+				JOIN qi_results_deatails ON qi_info_traffic.call_id = qi_info_traffic.call_id
+				JOIN qi_info_map_rule ON qi_results_deatails.detail_rule_id = qi_info_map_rule.id
+			WHERE
+				qi_info_traffic.is_deleted = 0
+				AND qi_results_deatails.is_deleted = 0
+				AND qi_info_map_rule.is_deleted = 0
+			GROUP BY
+				qi_info_traffic.agent_id,
+				qi_results_deatails.detail_rule_id
+			ORDER BY
+				qi_info_traffic.agent_id,
+				cnt_rule DESC
+			) c
+		) a
+	GROUP BY
+		a.agent_id
+	) rules ON qi_info_traffic.agent_id = rules.agent_id
+WHERE
+	qi_info_traffic.is_deleted = 0
+		{sql_cond}
+
+GROUP BY
+	qi_info_traffic.agent_id;

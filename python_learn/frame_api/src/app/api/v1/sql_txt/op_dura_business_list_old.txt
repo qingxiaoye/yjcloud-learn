@@ -1,0 +1,26 @@
+SELECT
+	bus_type.type_name,
+	COUNT( 1 ) AS cnt_total,
+	count( IF ( qi_info_traffic.file_status >= 3, TRUE, NULL ) ) AS cnt_qi,
+	CAST( AVG( qi_score_call.qc_score ) AS DECIMAL ( 10, 1 ) ) AS avg_score,
+	CAST( AVG( qi_call_duration.duration ) AS DECIMAL ( 10, 0 ) ) AS duration,
+	CAST( avg( qi_call_duration.effective_duration ) AS DECIMAL ( 10, 0 ) ) AS effe_dura,
+	CAST( avg( qi_call_duration.cust_effective ) AS DECIMAL ( 10, 0 ) ) AS cust_effe,
+	CAST( avg( qi_call_duration.agent_effective ) AS DECIMAL ( 10, 0 ) ) AS agent_effe
+FROM
+	qi_info_traffic
+	LEFT JOIN qi_score_call ON qi_info_traffic.call_id = qi_score_call.call_id
+	JOIN qi_call_duration ON qi_info_traffic.call_id = qi_call_duration.call_id
+	JOIN (
+	SELECT
+		qi_results_business_analysis.call_id AS call_id,
+		qi_info_business_type.type_name AS type_name,
+		qi_info_business_type.type_code AS type_code
+	FROM
+		qi_info_business_type
+		JOIN qi_results_business_analysis ON qi_info_business_type.type_code = qi_results_business_analysis.business_type
+	) bus_type ON qi_info_traffic.call_id = bus_type.call_id
+WHERE qi_info_traffic.is_deleted=0 and qi_score_call.is_deleted=0  and qi_call_duration.is_deleted=0
+{sql_cond}
+GROUP BY
+	bus_type.type_code

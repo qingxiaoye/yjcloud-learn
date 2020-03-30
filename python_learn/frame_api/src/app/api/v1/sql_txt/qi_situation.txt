@@ -1,0 +1,10 @@
+SELECT
+	COUNT( 1 ) AS cnt_total,
+	count( IF ( file_status >= 3, TRUE, NULL ) ) AS cnt_qi,
+	count( IF ( file_status =4, TRUE, NULL ) ) AS cnt_review,
+	COUNT( IF ( review_status = 1, TRUE, NULL ) ) AS cnt_qi_corr,
+	COUNT( IF ( hit_status = 1, TRUE, NULL ) ) AS cnt_hit
+FROM
+	qi_info_traffic 
+WHERE
+	is_deleted = 0  {sql_cond}
