@@ -11,7 +11,7 @@ class Config:
     ENV = 'production'
 
     HOST = '127.0.0.1'
-    PORT = 5000
+    PORT = 7710
 
     TOKEN_EXPIRATION = 30 * 24 * 3600
     ADMIN_TOKEN_EXPIRATION = 1800
@@ -32,6 +32,7 @@ class Config:
     UTTERANCE_FILE_SERVER = 'http://192.168.106.170:5000'
 
     LOGGING_CONFIG_PATH = './app/logging.yaml'
+    PLUGINS_CONFIG_PATH = './plugins.yaml'
     LOGGING_PATH = './logs'
 
     BUSI_QIROJECT_CODE_PREFIX = 'QPJ'

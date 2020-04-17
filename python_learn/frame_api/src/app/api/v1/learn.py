@@ -31,12 +31,8 @@ logger = logging.getLogger(__name__)
 
 def _branch_sub_rel_reformer(branch_id_pairs, max_deep=10):
     branch_sub_rel = defaultdict(set)
-    print('branch_sub_rel1', branch_sub_rel)
-    print('branch_id_pairs',branch_id_pairs)
     for b_id, b_supid in branch_id_pairs:
         branch_sub_rel[b_supid].add(b_id)
-    print('branch_sub_rel2', branch_sub_rel)
-
     branch_all_sub_rel = defaultdict(set)
     for k, sub_ids in branch_sub_rel.items():
         all_sub_ids = set()

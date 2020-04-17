@@ -65,6 +65,14 @@ def create_app(config_name, logging_cfg=None):
         # print logging_cfg_dict
     logging.config.dictConfig(logging_cfg_dict)
 
+    # 更新plugins.yaml文件
+    plugins_cfg = app.config['PLUGINS_CONFIG_PATH']
+    plugins_cfg = os.path.abspath(os.path.join(app.root_path, '{}'.format(plugins_cfg)))
+    with codecs.open(plugins_cfg, 'r', encoding='utf-8') as f:
+        plugins_cfg_dict = yaml.safe_load(f.read())
+
+    app.config.update(plugins_cfg_dict)
+
     register_blueprints(app)
     register_plugin(app)
 

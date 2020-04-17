@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 import collections
-import hashlib
-import socket
-import subprocess
-import uuid
-
-import errno
 import os
 import re
-import scandir
+import socket
+import subprocess
 import time
+import uuid
+from datetime import date, timedelta
 from datetime import datetime
+
+import pandas as pd
+import scandir
 
 
 def get_uuid_by_upload(name, timestamp_int):
@@ -73,11 +73,46 @@ def timeit(method):
 
 
 def datetime2timestamp(datetime_v):
-    if not isinstance(datetime_v, datetime):
+    # python3
+    # if not isinstance(datetime_v, datetime):
+    #     return None
+    # return int(time.mktime(datetime_v.timetuple()))
+
+    # python3
+    if isinstance(datetime_v, datetime):
+        return int(datetime.timestamp(datetime_v))
+    elif isinstance(datetime_v, date):
+        return int(datetime.timestamp(datetime.combine(datetime_v, datetime.min.time())))
+    else:
         return None
-    return int(time.mktime(datetime_v.timetuple()))
 
 
+def get_default_date_interval(day_shift, today_shift=1):
+    _today = date.today() + timedelta(days=today_shift)
+    _shift_day = _today + timedelta(days=day_shift)
+
+    return _shift_day, _today
+
+
+def get_default_time_interval(day_shift):
+    _now = datetime.now()
+    _shift = (_now + timedelta(days=day_shift)).replace(hour=0, minute=0, second=0, microsecond=0, )
+
+    return _shift, _now
+
+
+def get_date_list(start_time, end_time):
+    start_time = datetime.fromtimestamp(start_time).strftime('%Y-%m-%d')
+    end_time = datetime.fromtimestamp(end_time).strftime('%Y-%m-%d')
+    date_list = [datetime2timestamp(x) for x in list(pd.date_range(start=start_time, end=end_time, freq='D'))]
+    return date_list
+
+
+def get_hour_list(start_time, end_time):
+    start_time = datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H')
+    end_time = datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H')
+    date_list = [datetime2timestamp(x) for x in list(pd.date_range(start=start_time, end=end_time, freq='H'))]
+    return date_list
 # def crc64(string):
 #     import libscrc
 #     crc64 = libscrc.iso('测试')
@@ -329,17 +364,24 @@ def safe_cast_int(num_str, default=0):
         return default
 
 
-def safe_cast_float(num_str, default=0.):
+def safe_cast_float(num_str, default=0., precision=None):
     try:
         res = float(num_str)
+        if precision:
+            res = round(res, precision)
         return res
     except:
         return default
 
 
-"""
-ms转化为s
-"""
+def safe_division(dividend, divisor, default=0, precision=None):
+    try:
+        res = float(dividend) / float(divisor)
+        if precision:
+            res = round(res, precision)
+        return res
+    except:
+        return default
 
 
 def msec2time(num_str, default='00:00:00'):

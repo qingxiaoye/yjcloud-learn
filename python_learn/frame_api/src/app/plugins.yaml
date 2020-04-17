@@ -1,0 +1,10 @@
+PLUGINS:
+  LOG_PARSER:
+    PLUGIN_SWITCH: ON
+    PLUGIN_NAME: 解析入库
+    PLUGIN_PATH: /home/user/xiaoqq/asrc_recon/new_log_parser/
+    PLUGIN_MAIN_RUNNER: ./src/run_log_parser.py
+    PLUGIN_VENV_PATH: /home/user/xiaoqq/asrc_recon/log_parser_env
+
+
+
