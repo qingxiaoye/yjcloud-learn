@@ -4,37 +4,7 @@
     <bookmark url="file://D:/a_a_a_project/AI_Speech_QIA/src/app/api/v1/statistisc_analyse.py" description="    grp_q = grp_q.subquery('grp_q')&#10;&#10;    q = db_v1..." line="14" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3202cc1f-8a89-4a58-8b09-d0347cfea551" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/算法图解.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/v1/stat_dict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/1_binary_search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/111.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/Syntactic_sugar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/a_dict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/b_list_deque.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/debuglearn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/font_color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/learn.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/basic_know/很牛的函数/获得某个部门的所有下级部门.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/我也不知道是个什么文件/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/code_learn/我也不知道是个什么文件/test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/plugins.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aurélien Géron - Hands-On Machine Learning with Scikit-Learn and TensorFlow (2017, O’Reilly).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ian Goodfellow, Yoshua Bengio, Aaron Courville - Deep Learning [draft of March 30, 2015] (2016, MIT Press).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Luciano Ramalho - Fluent Python_ Clear, Concise, and Effective Programming (2015, O’Reilly Media).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../[Global Edition] Stuart J. Russell, Peter Norvig - Artificial Intelligence_ A Modern Approach, 3rd Edition (2016, Pearson Education) (2).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/v1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/v1/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/v1/learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/v1/learn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/code_learn/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/code_learn/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/configure.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/configure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/libs/builtin_extend.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/libs/builtin_extend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../算法图解.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../人工智能后厂理工精选书目资料.pdf" beforeDir="false" />
-    </list>
+    <list default="true" id="3202cc1f-8a89-4a58-8b09-d0347cfea551" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,16 +425,15 @@
       <workItem from="1586827596675" duration="598000" />
       <workItem from="1586913537425" duration="1641000" />
       <workItem from="1586999067467" duration="10096000" />
-      <workItem from="1587086525274" duration="482000" />
+      <workItem from="1587086525274" duration="724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137610000" />
+    <option name="totallyTimeSpent" value="138048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989059" visible="true" weight="0.31836462" />
       <window_info id="Structure" order="1" sideWeight="0.5010941" side_tool="true" weight="0.2533512" />
