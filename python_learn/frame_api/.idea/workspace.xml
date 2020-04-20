@@ -4,7 +4,12 @@
     <bookmark url="file://D:/a_a_a_project/AI_Speech_QIA/src/app/api/v1/statistisc_analyse.py" description="    grp_q = grp_q.subquery('grp_q')&#10;&#10;    q = db_v1..." line="14" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3202cc1f-8a89-4a58-8b09-d0347cfea551" name="Default Changelist" comment="" />
+    <list default="true" id="3202cc1f-8a89-4a58-8b09-d0347cfea551" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/2_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/3.py" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +22,12 @@
     <SUITE FILE_PATH="coverage/frame_api$1_Higher_order__func.coverage" NAME="1_Higher_order _func Coverage Results" MODIFIED="1585479937587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/NLP" />
     <SUITE FILE_PATH="coverage/frame_api$2_numpy_pandas.coverage" NAME="2_numpy_pandas Coverage Results" MODIFIED="1585492414117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/NLP" />
     <SUITE FILE_PATH="coverage/frame_api$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1586401112954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/我也不知道是个什么文件" />
+    <SUITE FILE_PATH="coverage/frame_api$3.coverage" NAME="3 Coverage Results" MODIFIED="1587213753060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram" />
     <SUITE FILE_PATH="coverage/frame_api$Syntactic_sugar.coverage" NAME="Syntactic_sugar Coverage Results" MODIFIED="1586488908067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/basic_know" />
     <SUITE FILE_PATH="coverage/frame_api$a_dict.coverage" NAME="a_dict Coverage Results" MODIFIED="1586330467825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/我也不知道是个什么文件" />
-    <SUITE FILE_PATH="coverage/frame_api$111.coverage" NAME="111 Coverage Results" MODIFIED="1587008556442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/basic_know" />
+    <SUITE FILE_PATH="coverage/frame_api$2_sort.coverage" NAME="2_sort Coverage Results" MODIFIED="1587205252832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram" />
+    <SUITE FILE_PATH="coverage/frame_api$111.coverage" NAME="111 Coverage Results" MODIFIED="1587090975697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/basic_know" />
+    <SUITE FILE_PATH="coverage/frame_api$4_Quick_sort.coverage" NAME="4_Quick_sort Coverage Results" MODIFIED="1587263443969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram" />
     <SUITE FILE_PATH="coverage/frame_api$basic_know.coverage" NAME="basic_know Coverage Results" MODIFIED="1585107630310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn" />
     <SUITE FILE_PATH="coverage/frame_api$debuglearn.coverage" NAME="debuglearn Coverage Results" MODIFIED="1587003834332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/basic_know" />
     <SUITE FILE_PATH="coverage/frame_api$x.coverage" NAME="获取最近x天的时间错 Coverage Results" MODIFIED="1585640888696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/xqq" />
@@ -29,83 +37,47 @@
     <SUITE FILE_PATH="coverage/frame_api$3_.coverage" NAME="3_多数据迭代处理 Coverage Results" MODIFIED="1585380708725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn" />
     <SUITE FILE_PATH="coverage/frame_api$speech_qia.coverage" NAME="speech_qia Coverage Results" MODIFIED="1586423176960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/frame_api$.coverage" NAME="一些比较好的封装函数 Coverage Results" MODIFIED="1585227866732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn" />
+    <SUITE FILE_PATH="coverage/frame_api$3_recursion.coverage" NAME="3_recursion Coverage Results" MODIFIED="1587213872096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram" />
     <SUITE FILE_PATH="coverage/frame_api$2_database.coverage" NAME="2_database Coverage Results" MODIFIED="1585391655263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn" />
     <SUITE FILE_PATH="coverage/frame_api$b_list_deque.coverage" NAME="b_list_deque Coverage Results" MODIFIED="1586427270923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/app/code_learn/basic_know" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/4_Quick_sort.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/1_binary_search.py">
+        <entry file="file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/2_sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="575">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/code_learn/test.py">
+        <entry file="file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/3_recursion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="247">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/code_learn/NLP/1_Higher_order _func.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4100">
+              <caret line="165" column="8" selection-start-line="165" selection-end-line="166" />
               <folding>
-                <element signature="e#42#71#0" expanded="true" />
-                <element signature="e#570#612#0" />
+                <element signature="e#97#108#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/code_learn/handle_log.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6700">
-              <caret line="286" column="13" selection-start-line="286" selection-start-column="13" selection-end-line="286" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/speech_qia.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/111.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/a_basic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/b_list_deque.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="60" column="16" selection-start-line="60" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -115,9 +87,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
         <option value="Jupyter Notebook" />
         <option value="package.json" />
+        <option value="Python Unit Test" />
         <option value="Python Script" />
       </list>
     </option>
@@ -132,6 +104,7 @@
       <find>排序</find>
       <find>deque</find>
       <find>main</find>
+      <find>__main</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,18 +143,23 @@
         <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/b_list_deque.py" />
         <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/55.ipynb" />
         <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/package.json" />
-        <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/learn.md" />
         <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/Syntactic_sugar.py" />
         <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/font_color.py" />
         <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/很牛的函数/debuglearn.py" />
         <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/debuglearn.py" />
-        <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/111.py" />
         <option value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/binary_search.py" />
         <option value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/1_binary_search.py" />
+        <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/111.py" />
+        <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/learn.md" />
+        <option value="$PROJECT_DIR$/src/app/code_learn/basic_know/2_built_in_fun.py" />
+        <option value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/3.py" />
+        <option value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/3_recursion.py" />
+        <option value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/4_Quick_sort.py" />
+        <option value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/2_sort.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="1820" />
     <option name="height" value="1100" />
@@ -192,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,6 +212,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,13 +225,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\yjcloud-learn\python_learn\frame_api\doc" />
       <recent name="F:\yjcloud-learn\python_learn\frame_api\src\app\code_learn\basic_know" />
+      <recent name="F:\yjcloud-learn\python_learn\frame_api\doc" />
       <recent name="F:\yjcloud-learn\python_learn\frame_api\src\app" />
       <recent name="F:\yjcloud-learn\python_learn\frame_api\cfg" />
       <recent name="F:\yjcloud-learn\python_learn\frame_api\src\app\api\v1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\yjcloud-learn\python_learn\frame_api\src\app\code_learn\AlgorithmDiagram" />
       <recent name="F:\yjcloud-learn\python_learn\frame_api\src\app\code_learn\basic_know" />
       <recent name="F:\yjcloud-learn\python_learn\frame_api\src\app\code_learn\NLP" />
     </key>
@@ -270,7 +249,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.binary_search">
+  <component name="RunManager" selected="Python.4_Quick_sort">
     <configuration name="111" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="frame_api" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,51 +272,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Syntactic_sugar" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="frame_api" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/app/code_learn/basic_know" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/app/code_learn/basic_know/Syntactic_sugar.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="b_list_deque" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="frame_api" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/app/code_learn/basic_know" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/app/code_learn/basic_know/b_list_deque.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="2_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="frame_api" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -350,7 +285,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:\yjcloud-learn\python_learn\frame_api\src\app\code_learn\AlgorithmDiagram\1_binary_search.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/2_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -359,7 +294,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="debuglearn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="frame_api" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -367,12 +302,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/app/code_learn/basic_know" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/app/code_learn/basic_know/debuglearn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="3_recursion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="frame_api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/3_recursion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4_Quick_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="frame_api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/4_Quick_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -383,11 +362,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.binary_search" />
+        <item itemvalue="Python.4_Quick_sort" />
+        <item itemvalue="Python.3_recursion" />
+        <item itemvalue="Python.3" />
+        <item itemvalue="Python.2_sort" />
         <item itemvalue="Python.111" />
-        <item itemvalue="Python.debuglearn" />
-        <item itemvalue="Python.Syntactic_sugar" />
-        <item itemvalue="Python.b_list_deque" />
       </list>
     </recent_temporary>
   </component>
@@ -425,23 +404,34 @@
       <workItem from="1586827596675" duration="598000" />
       <workItem from="1586913537425" duration="1641000" />
       <workItem from="1586999067467" duration="10096000" />
-      <workItem from="1587086525274" duration="724000" />
+      <workItem from="1587086525274" duration="3180000" />
+      <workItem from="1587201881626" duration="6955000" />
+      <workItem from="1587345602198" duration="1690000" />
     </task>
+    <task id="LOCAL-00001" summary="提交新的代码">
+      <created>1587350289002</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587350289002</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138048000" />
+    <option name="totallyTimeSpent" value="149153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989059" visible="true" weight="0.31836462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989059" visible="true" weight="0.327748" />
       <window_info id="Structure" order="1" sideWeight="0.5010941" side_tool="true" weight="0.2533512" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2829912" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43695015" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3489736" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43695015" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -461,6 +451,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交新的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交新的代码" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -478,6 +472,11 @@
           <url>file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/1_binary_search.py</url>
           <line>23</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/4_Quick_sort.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -525,41 +524,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/a_yunjia_project/shnaghai_project/shanghai_env/Lib/site-packages/pandas/core/indexes/datetimes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25250">
-          <caret line="1043" column="53" lean-forward="true" selection-start-line="1043" selection-start-column="53" selection-end-line="1043" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/job_soft/python37/Lib/datetime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44175">
-          <caret line="1769" column="53" selection-start-line="1769" selection-start-column="42" selection-end-line="1769" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/xqq/获取最近x天的时间错.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="e#42#71#0" expanded="true" />
-            <element signature="e#151#549#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/我也不知道是个什么文件/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/NLP/2_numpy_pandas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -721,24 +685,6 @@
     <entry file="file://$PROJECT_DIR$/cfg/plugins_conf.yaml" />
     <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/55.ipynb" />
     <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/package.json" />
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/learn.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/NLP/1_Higher_order _func.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="e#97#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -760,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/Syntactic_sugar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cfg/logging.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -774,13 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91875">
           <caret line="3675" column="8" selection-start-line="3675" selection-start-column="8" selection-end-line="3675" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/font_color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -826,17 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="e#42#71#0" expanded="true" />
-            <element signature="e#570#612#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/code_learn/handle_log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6700">
@@ -851,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/111.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -865,7 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/a_basic.py">
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/1_basic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
           <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="23" />
@@ -876,6 +790,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
           <caret line="60" column="16" selection-start-line="60" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <element signature="e#42#71#0" expanded="true" />
+            <element signature="e#570#612#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/111.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/learn.md" />
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/font_color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/Syntactic_sugar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/basic_know/2_built_in_fun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/NLP/1_Higher_order _func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4100">
+          <caret line="165" column="8" selection-start-line="165" selection-end-line="166" />
+          <folding>
+            <element signature="e#97#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="29" column="9" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/3_recursion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/4_Quick_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/code_learn/AlgorithmDiagram/2_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
