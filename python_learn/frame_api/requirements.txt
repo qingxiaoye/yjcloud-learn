@@ -39,7 +39,7 @@ python-socketio==4.4.0
 pytz==2019.3
 PyYAML==5.2
 requests==2.23.0
-rsa==4.0
+rsa==4.1
 s3transfer==0.3.3
 scandir==1.10.0
 scipy==1.4.1
